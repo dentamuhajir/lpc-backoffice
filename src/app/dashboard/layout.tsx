@@ -1,3 +1,5 @@
+import Header from "./components/header/Header";
+
 export default function DashboardLayout({
     children,
   }: Readonly<{
@@ -5,46 +7,7 @@ export default function DashboardLayout({
   }>) {
     return (
         <div className="layout-wrapper layout-static">
-            <div className="layout-topbar bg-white">
-            <a
-                href="/"
-                className="router-link-active router-link-exact-active layout-topbar-logo"
-            >
-                <img alt="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bank_Syariah_Indonesia.svg/1280px-Bank_Syariah_Indonesia.svg.png" />
-            </a>
-
-            <button className="p-link layout-menu-button layout-topbar-button">
-                <i className="pi pi-bars"></i>
-            </button>
-
-            <button
-                className="p-link layout-topbar-menu-button layout-topbar-button"
-                data-pd-styleclass="true"
-            >
-                <i className="pi pi-ellipsis-v"></i>
-            </button>
-
-            <ul className="layout-topbar-menu hidden lg:flex origin-top">
-                {/* <li>
-                <button className="p-link layout-topbar-button">
-                    <i className="pi pi-calendar"></i>
-                    <span>Events</span>
-                </button>
-                </li> */}
-                <li>
-                <button className="p-link layout-topbar-button">
-                    <i className="pi pi-cog"></i>
-                    <span>Settings</span>
-                </button>
-                </li>
-                <li>
-                <button className="p-link layout-topbar-button">
-                    <i className="pi pi-user"></i>
-                    <span>Profile</span>
-                </button>
-                </li>
-            </ul>
-            </div>
+            <Header/>
             <div className="layout-sidebar bg-white">
             <div className="layout-menu-container">
                 <ul className="layout-menu">
@@ -216,5 +179,4 @@ export default function DashboardLayout({
             </div>
         </div>
         );
-    
   }
