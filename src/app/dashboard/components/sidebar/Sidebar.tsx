@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Sidebar: React.FC = () => {
@@ -9,13 +10,10 @@ const Sidebar: React.FC = () => {
                 <div className="layout-menuitem-root-text">Home</div>
                 <ul>
                 <li>
-                    <a
-                    href="/"
-                    className="p-ripple router-link-active router-link-exact-active"
-                    >
-                    <i className="pi pi-fw pi-shopping-bag"></i>
-                    <span>Dashboard</span>
-                    </a>
+                    <Link href="/dashboard" className="p-ripple router-link-active router-link-exact-active">
+                        <i className="pi pi-fw pi-shopping-bag"></i>
+                        <span>Dashboard</span>
+                    </Link>
                 </li>
                 </ul>
             </li>
@@ -31,10 +29,10 @@ const Sidebar: React.FC = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="/demo/input" className="p-ripple">
+                    <Link href="/dashboard/users" className="p-ripple">
                     <i className="pi pi-fw pi-users"></i>
                     <span>User</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     <a href="/demo/floatlabel" className="p-ripple">
