@@ -25,12 +25,12 @@ export default function DashboardLayout({
             </button>
 
             <ul className="layout-topbar-menu hidden lg:flex origin-top">
-                <li>
+                {/* <li>
                 <button className="p-link layout-topbar-button">
                     <i className="pi pi-calendar"></i>
                     <span>Events</span>
                 </button>
-                </li>
+                </li> */}
                 <li>
                 <button className="p-link layout-topbar-button">
                     <i className="pi pi-cog"></i>
@@ -55,7 +55,7 @@ export default function DashboardLayout({
                     <ul>
                     <li>
                         <a href="/" className="p-ripple router-link-active router-link-exact-active">
-                        <i className="pi pi-fw pi-home"></i>
+                        <i className="pi pi-fw pi-shopping-bag"></i>
                         <span>Dashboard</span>
                         </a>
                     </li>
@@ -64,46 +64,44 @@ export default function DashboardLayout({
 
                 {/* UI Components */}
                 <li className="layout-menuitem-category">
-                    <div className="layout-menuitem-root-text">UI Components</div>
+                    <div className="layout-menuitem-root-text">General Settings</div>
                     <ul>
-                    <li><a href="/demo/formlayout" className="p-ripple"><i className="pi pi-fw pi-id-card"></i><span>Form Layout</span></a></li>
-                    <li><a href="/demo/input" className="p-ripple"><i className="pi pi-fw pi-check-square"></i><span>Input</span></a></li>
-                    <li><a href="/demo/floatlabel" className="p-ripple"><i className="pi pi-fw pi-bookmark"></i><span>Float Label</span></a></li>
-                    <li><a href="/demo/invalidstate" className="p-ripple"><i className="pi pi-fw pi-exclamation-circle"></i><span>Invalid State</span></a></li>
-                    <li><a href="/demo/button" className="p-ripple"><i className="pi pi-fw pi-mobile"></i><span>Button</span></a></li>
-                    <li><a href="/demo/table" className="p-ripple"><i className="pi pi-fw pi-table"></i><span>Table</span></a></li>
-                    <li><a href="/demo/list" className="p-ripple"><i className="pi pi-fw pi-list"></i><span>List</span></a></li>
-                    <li><a href="/demo/tree" className="p-ripple"><i className="pi pi-fw pi-share-alt"></i><span>Tree</span></a></li>
-                    <li><a href="/demo/panel" className="p-ripple"><i className="pi pi-fw pi-tablet"></i><span>Panel</span></a></li>
-                    <li><a href="/demo/overlay" className="p-ripple"><i className="pi pi-fw pi-clone"></i><span>Overlay</span></a></li>
-                    <li><a href="/demo/menu" className="p-ripple"><i className="pi pi-fw pi-bars"></i><span>Menu</span></a></li>
-                    <li><a href="/demo/messages" className="p-ripple"><i className="pi pi-fw pi-comment"></i><span>Message</span></a></li>
-                    <li><a href="/demo/file" className="p-ripple"><i className="pi pi-fw pi-file"></i><span>File</span></a></li>
-                    <li><a href="/demo/chart" className="p-ripple"><i className="pi pi-fw pi-chart-bar"></i><span>Chart</span></a></li>
-                    <li><a href="/demo/misc" className="p-ripple"><i className="pi pi-fw pi-circle-off"></i><span>Misc</span></a></li>
+                    <li>
+                        <a href="/demo/formlayout" className="p-ripple"><i className="pi pi-fw pi-home"></i><span>Home</span></a></li>
+                    <li>
+                        <a href="/demo/input" className="p-ripple"><i className="pi pi-fw pi-users"></i><span>User</span></a></li>
+                    <li><a href="/demo/floatlabel" className="p-ripple"><i className="pi pi-fw pi-bookmark"></i><span>Product Information</span></a></li>
+                    <li><a href="/demo/tree" className="p-ripple"><i className="pi pi-fw pi-book"></i><span>Artikel</span></a></li>
+                    <li><a href="/demo/panel" className="p-ripple"><i className="pi pi-fw pi-tablet"></i><span>Promo</span></a></li>
+                    <li><a href="/demo/invalidstate" className="p-ripple"><i className="pi pi-fw pi-exclamation-circle"></i><span>Tentang Kami</span></a></li>
+                    <li><a href="/demo/button" className="p-ripple"><i className="pi pi-fw pi-mobile"></i><span>Syarat & Ketentuan</span></a></li>
+                    <li><a href="/demo/table" className="p-ripple"><i className="pi pi-fw pi-table"></i><span>Kebijakan & Privasi</span></a></li>
+                    <li><a href="/demo/list" className="p-ripple"><i className="pi pi-fw pi-list"></i><span>Faq</span></a></li>
+                    {/* <li><a href="/demo/overlay" className="p-ripple"><i className="pi pi-fw pi-clone"></i><span>User Management</span></a></li>
+                    <li><a href="/demo/menu" className="p-ripple"><i className="pi pi-fw pi-bars"></i><span>Navigasi</span></a></li> */}
                     </ul>
                 </li>
 
                 {/* UI Blocks */}
                 <li className="layout-menuitem-category">
-                    <div className="layout-menuitem-root-text">UI Blocks</div>
+                    <div className="layout-menuitem-root-text">Catalog</div>
                     <ul>
                     <li>
                         <a href="/demo/blocks" className="p-ripple">
-                        <i className="pi pi-fw pi-eye"></i><span>Free Blocks</span>
-                        <span className="p-badge">NEW</span>
+                        <i className="pi pi-fw pi-building"></i><span>Katalog Perumahan</span>
+                        {/* <span className="p-badge">NEW</span> */}
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://www.primefaces.org/primeblocks-vue" className="p-ripple">
                         <i className="pi pi-fw pi-globe"></i><span>All Blocks</span>
                         </a>
-                    </li>
+                    </li> */}
                     </ul>
                 </li>
 
                 {/* Pages */}
-                <li className="layout-menuitem-category">
+                {/* <li className="layout-menuitem-category">
                     <div className="layout-menuitem-root-text">Pages</div>
                     <ul>
                     <li><a href="/demo/pages/crud" className="p-ripple"><i className="pi pi-fw pi-user-edit"></i><span>Crud</span></a></li>
@@ -113,19 +111,108 @@ export default function DashboardLayout({
                     <li><a href="/notfound" className="p-ripple"><i className="pi pi-fw pi-exclamation-circle"></i><span>Not Found</span></a></li>
                     <li><a href="/demo/pages/empty" className="p-ripple"><i className="pi pi-fw pi-circle-off"></i><span>Empty</span></a></li>
                     </ul>
-                </li>
+                </li> */}
 
                 {/* Get Started */}
-                <li className="layout-menuitem-category">
+                {/* <li className="layout-menuitem-category">
                     <div className="layout-menuitem-root-text">Get Started</div>
                     <ul>
                     <li><a href="#" className="p-ripple"><i className="pi pi-fw pi-question"></i><span>Documentation</span></a></li>
                     <li><a href="https://github.com/who-jonson/sakai-nuxt" className="p-ripple"><i className="pi pi-fw pi-search"></i><span>View Source</span></a></li>
                     </ul>
-                </li>
+                </li> */}
 
                 </ul>
             </div>
+            </div>
+            <div className="layout-main-container">
+                <div className="layout-main">
+
+                    <div className="grid grid-cols-4 gap-4 mb-5">
+                        <div className="bg-white p-10 rounded-2xl border-1 border-gray-200">bg-white p-10 rounded-2xl border-1 border-gray-200</div>
+                        <div className="bg-white p-10 rounded-2xl border-1 border-gray-200">bg-white p-10 rounded-2xl border-1 border-gray-200</div>
+                        <div className="bg-white p-10 rounded-2xl border-1 border-gray-200">bg-white p-10 rounded-2xl border-1 border-gray-200</div>
+                        <div className="bg-white p-10 rounded-2xl border-1 border-gray-200">bg-white p-10 rounded-2xl border-1 border-gray-200</div>
+                    </div>
+
+                    <div className="grid grid-cols-1">
+                        <div className="bg-white p-20 rounded-2xl border-1 border-gray-200">Content here</div>
+                    </div>
+                    {/* <div className="grid">
+                        
+
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <p className="font-bold">Col 1</p>
+                        </div>
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <p className="font-bold">Col 2</p>
+                        </div>
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <p className="font-bold">Col 3</p>
+                        </div>
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <p className="font-bold">Col 4</p>
+                        </div>
+
+                    </div> */}
+                    {/* <div className="grid">
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <div className="card mb-0">
+                                <div className="flex justify-content-between mb-3">
+                                    <span className="block text-500 font-medium mb-3">Orders</span>
+                                    <div className="text-900 font-medium text-xl"> 152 </div>
+                                </div>
+                                <div className="flex align-items-center justify-content-center bg-blue-100 border-round" style={{ width:'2.5rem', height:'2.5rem'}}>
+                                    <i className="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                                </div>
+                            </div>
+                            <span className="text-green-500 font-medium">24 new </span>
+                            <span className="text-500">since last visit</span>
+                        </div>
+
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <div className="card mb-0">
+                                <div className="flex justify-content-between mb-3">
+                                    <span className="block text-500 font-medium mb-3">Orders</span>
+                                    <div className="text-900 font-medium text-xl"> 152 </div>
+                                </div>
+                                <div className="flex align-items-center justify-content-center bg-blue-100 border-round" style={{ width:'2.5rem', height:'2.5rem'}}>
+                                    <i className="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                                </div>
+                            </div>
+                            <span className="text-green-500 font-medium">24 new </span>
+                            <span className="text-500">since last visit</span>
+                        </div>
+
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <div className="card mb-0">
+                                <div className="flex justify-content-between mb-3">
+                                    <span className="block text-500 font-medium mb-3">Orders</span>
+                                    <div className="text-900 font-medium text-xl"> 152 </div>
+                                </div>
+                                <div className="flex align-items-center justify-content-center bg-blue-100 border-round" style={{ width:'2.5rem', height:'2.5rem'}}>
+                                    <i className="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                                </div>
+                            </div>
+                            <span className="text-green-500 font-medium">24 new </span>
+                            <span className="text-500">since last visit</span>
+                        </div>
+
+                        <div className="col-12 lg:col-6 xl:col-3">
+                            <div className="card mb-0">
+                                <div className="flex justify-content-between mb-3">
+                                    <span className="block text-500 font-medium mb-3">Orders</span>
+                                    <div className="text-900 font-medium text-xl"> 152 </div>
+                                </div>
+                                <div className="flex align-items-center justify-content-center bg-blue-100 border-round" style={{ width:'2.5rem', height:'2.5rem'}}>
+                                    <i className="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                                </div>
+                            </div>
+                            <span className="text-green-500 font-medium">24 new </span>
+                            <span className="text-500">since last visit</span>
+                        </div>
+                    </div> */}
+                </div>
             </div>
         </div>
         );
